@@ -1,0 +1,35 @@
+// If you don’t know what to do,
+// it goes here. We’ll figure it
+// out later.™
+
+// Hidden helper, currently
+// used on global <h1> and
+// one other thing
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+article {
+  blockquote {
+    font-size: 1.25em;
+    border-left: 0.25em solid;
+    padding-left: 2em;
+    p:last-child {
+      strong:only-child {
+        font-style: italic;
+        font-weight: 400;
+        font-family: $font-family-serif;
+        color: $color-grey-dark;
+        display: block;
+        &:before {
+          content: "\2014";
+        }
+        a {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

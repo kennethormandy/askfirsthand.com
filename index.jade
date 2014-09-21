@@ -1,0 +1,13 @@
+h1 Blog
+
+ul
+  for article, slug in public._data
+    unless article.published === false
+      li
+        a(href="#{ slug }")
+          time(datetime="#{ new Date(article.date) }")
+            time= article.date
+            //- Change this to frienly time first
+          h2 #{ article.title }
+          if service.disqus
+            a(href="#{ article.slug }#disqus_thread") Comments

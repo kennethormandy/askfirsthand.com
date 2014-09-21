@@ -1,0 +1,75 @@
+// Base sizes
+// ==========
+
+$base-font-size: 1.35em;
+$base-line-height: 1.425;
+$base-border-radius: 0.125em;
+
+// Grid Settings
+// =============
+
+// $visual-grid: true;
+$visual-grid-color: cornflowerblue;
+$column: modular-scale(1em, 3, $augmented-fourth);
+$gutter: modular-scale(1em, 1, $augmented-fourth);
+$grid-columns: 7;
+$max-width: 35em;
+
+// Font Stacks
+// ===========
+
+$font-family-sans:      "eskapade-fraktur", "Avenir Next", "AvenirNext-SemiBold", "Futura-Medium", Futura, "Futura Std", "Trebuchet MS", Helvetica, Arial, sans-serif;
+$font-family-serif:     "eskapade", Georgia, serif;
+$font-family-display:    $font-family-sans;
+$font-family-caption:    $font-family-sans;
+$font-family-monospace: "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+$base-font-family:       $font-family-serif;
+
+
+// Font Weights
+// ============
+
+$font-weight-thin:       100;
+$font-weight-light:      300;
+$font-weight-normal:     400;
+$font-weight-medium:     500;
+$font-weight-semibold:   600;
+$font-weight-bold:       700;
+$font-weight-extrabold:  800;
+$font-weight-black:      900;
+
+
+// Breakpoints
+// ===========
+
+$narrow-col: 3;
+$narrow-width: 28em;
+$narrow: new-breakpoint(min-width $narrow-width $narrow-col);
+
+$mid-col: 5;
+$mid-width: 35em;
+$mid: new-breakpoint(min-width $mid-width $mid-col);
+
+$wide-col: 7;
+$wide-width: 40em;
+$wide: new-breakpoint(min-width $wide-width $wide-col);
+
+$huge-col: $wide-col;
+$huge-width: 65em;
+$huge: new-breakpoint(min-width $huge-width $huge-col);
+
+$massive-col: $huge-col;
+$massive-width: 92em;
+$massive: new-breakpoint(min-width $massive-width $massive-col);
+
+
+// Colour Scheme
+// =============
+
+$color-pink: #DE7B8F;
+
+$color-primary: $color-pink;
+$color-primary-light: lighten($color-primary, 10%);
+$color-primary-lighter: lighten($color-primary, 20%);
+$color-primary-dark: darken($color-primary, 10%);
+$color-primary-darker: darken($color-primary, 20%);

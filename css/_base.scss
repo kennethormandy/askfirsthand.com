@@ -1,0 +1,131 @@
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+::selection {
+  background-color: $color-primary-lighter;
+}
+
+h1, h2, h3,
+.h1, .h2, .h3 {
+  font-family: $font-family-display;
+  line-height: 1.1;
+}
+
+// Anchors
+//
+// Markup:
+// <a href="#">Emily Carr University</a>
+// <a href="#"><p>Example content large target area. <span class="a-faux">Read more…</span></p></a>
+//
+// :focus  - lighten the link when focusing with the keyboard
+// :hover  - lighten the link when hovering with a pointer
+// :active - darken the link once it’s been pressed
+//
+// No styleguide reference.
+a,
+a:visited,
+.a-faux {
+  text-decoration: none;
+  color: $color-primary;
+  transition: opacity 0.125s ease-in-out, color 0.125s ease-in-out, background-color 0.125s ease-in-out, border-color 0.125s ease-in-out;
+  &:hover {
+    color: $color-primary-dark;
+  }
+  &:focus {
+    color: darken($color-primary-dark, 15%);
+    transition-duration: 0;
+    box-shadow: 0 0 0 1px $color-primary-dark;
+    outline: 0;
+    border-radius: $base-border-radius;
+  }
+  &:active {
+    color: $color-primary-darker;
+  }
+}
+
+// Lists
+//
+// Numbered, bullited, and definition lists are styled normally and
+// in a more pleasing manner for long form reading within articles.
+//
+// Markup:
+// <article>
+//   <ul>
+//     <li>Emily Carr University
+//       <ol>
+//         <li>North Building</li>
+//         <li>South Building</li>
+//       </ol>
+//     </li>
+//     <li>Library</li>
+//     <li>Charles H. Scott</li>
+//     <li>Concourse Gallery</li>
+//   </ul>
+//   <ol>
+//     <li>Emily Carr University
+//       <ul>
+//         <li>North Building</li>
+//         <li>South Building</li>
+//       </ul>
+//     </li>
+//     <li>Library</li>
+//     <li>Charles H. Scott</li>
+//     <li>Concourse Gallery</li>
+//   </ol>
+// </article>
+//
+// No styleguide reference.
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+article {
+  ul,
+  ol,
+  dl {
+    padding-left: 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 4em;
+    margin-right: 4em;
+    // @include media($wide) {
+    //   margin-left: mod(8);
+    //   margin-right: mod(8);
+    // }
+    ul,
+    ol,
+    dl {
+      margin-top: 0.25em;
+      margin-left: 2em;
+    }
+  }
+  ul > li {
+    list-style-type: disc;
+  }
+  ol > li {
+    list-style-type: decimal;
+  }
+}
+
+// Images
+//
+// No styleguide reference.
+
+figure img {
+  min-width: 100%;
+}
+
+// Small
+//
+// No styleguide reference.
+small {
+  font-size: 1em;
+  font-style: italic;
+}

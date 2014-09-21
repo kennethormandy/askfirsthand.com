@@ -1,0 +1,25 @@
+{
+  "domains": [
+    "askfirsthand.com",
+    "askfirsthand.ca"
+  ],
+  "globals": {
+    "title":       "First Hand",
+    "description": "",
+    "tagline":     "",
+    "name":        "First Hand",
+    "email":       "hello@kennethormandy.com",
+    "url":         "http://askfirsthand.com",
+    "service": {
+      "typekit":    "vfp1itg",
+      "analytics":  false,
+      "disqus":     false
+    },
+    "social": {
+      "hashtag":   "askfirsthand",
+      "twitter":   "askfirsthand",
+      "instagram": "askfirsthand",
+      "github":    "kennethormandy"
+    }
+  }
+}
