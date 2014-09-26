@@ -1,30 +1,45 @@
 // Base sizes
 // ==========
 
-$base-font-size: 1.35em;
-$base-line-height: 1.425;
+$base-font-size: 1.375em;
+$base-line-height: 1.433;
 $base-border-radius: 0.125em;
+$base-ratio: $minor-third;
+
 
 // Grid Settings
 // =============
 
 // $visual-grid: true;
 $visual-grid-color: cornflowerblue;
-$column: modular-scale(1em, 3, $augmented-fourth);
-$gutter: modular-scale(1em, 1, $augmented-fourth);
-$grid-columns: 7;
-$max-width: 35em;
+$visual-grid-index: front;
+$gutter: $base-line-height * 1em;
+$outer: $gutter / 2;
+$max-width: 33em;
+$grid-columns: 4;
+
 
 // Font Stacks
 // ===========
 
-$font-family-sans:      "eskapade-fraktur", "Avenir Next", "AvenirNext-SemiBold", "Futura-Medium", Futura, "Futura Std", "Trebuchet MS", Helvetica, Arial, sans-serif;
-$font-family-serif:     "eskapade", Georgia, serif;
+$font-family-sans:      "Cordale", "Avenir Next", "AvenirNext-SemiBold", "Futura-Medium", Futura, "Futura Std", "Trebuchet MS", Helvetica, Arial, sans-serif;
+$font-family-serif:     "Cordale", Georgia, serif;
 $font-family-display:    $font-family-sans;
 $font-family-caption:    $font-family-sans;
 $font-family-monospace: "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 $base-font-family:       $font-family-serif;
 
+// Font Sizes
+// ==========
+
+$font-size-large: modular-scale($base-font-size,  2, $base-ratio);
+$font-size-small: modular-scale($base-font-size, -4, $base-ratio);
+$font-size-h1:    modular-scale($base-font-size,  4, $base-ratio);
+$font-size-h2:    modular-scale($base-font-size,  2, $base-ratio);
+$font-size-h3:    modular-scale($base-font-size,  0, $base-ratio);
+$font-size-h4:    modular-scale($base-font-size,  0, $base-ratio);
+$font-size-h5:    $font-size-h4;
+$font-size-h6:    $font-size-h4;
 
 // Font Weights
 // ============
@@ -42,24 +57,24 @@ $font-weight-black:      900;
 // Breakpoints
 // ===========
 
-$narrow-col: 3;
+$narrow-col: $grid-columns;
 $narrow-width: 28em;
 $narrow: new-breakpoint(min-width $narrow-width $narrow-col);
 
 $mid-col: 5;
-$mid-width: 35em;
+$mid-width: 40em;
 $mid: new-breakpoint(min-width $mid-width $mid-col);
 
 $wide-col: 7;
-$wide-width: 40em;
+$wide-width: 60em;
 $wide: new-breakpoint(min-width $wide-width $wide-col);
 
 $huge-col: $wide-col;
-$huge-width: 65em;
+$huge-width: 80em;
 $huge: new-breakpoint(min-width $huge-width $huge-col);
 
 $massive-col: $huge-col;
-$massive-width: 92em;
+$massive-width: 100em;
 $massive: new-breakpoint(min-width $massive-width $massive-col);
 
 
@@ -68,8 +83,31 @@ $massive: new-breakpoint(min-width $massive-width $massive-col);
 
 $color-pink: #DE7B8F;
 
+$color-grey: #777;
+$color-grey-light: lighten($color-grey, 20%);
+$color-grey-lighter: lighten($color-grey, 40%);
+$color-grey-dark: darken($color-grey, 20%);
+$color-grey-darker: darken($color-grey, 40%);
+
+$color-text: $color-grey-dark;
+$color-background: #FFF;
+
 $color-primary: $color-pink;
 $color-primary-light: lighten($color-primary, 10%);
 $color-primary-lighter: lighten($color-primary, 20%);
 $color-primary-dark: darken($color-primary, 10%);
 $color-primary-darker: darken($color-primary, 20%);
+
+
+// Figures
+// =======
+
+$fig-numbered:     true;
+$fig-border-color: $color-text;
+$fig-bg-color:     $color-background;
+$fig-container:    $max-width;
+$fig-gutter:       $gutter;
+$fig-line-height:  $base-line-height;
+$fig-col-width:    $column;
+$fig-outer:        $outer;
+$fig-font-size-sm: $font-size-small;

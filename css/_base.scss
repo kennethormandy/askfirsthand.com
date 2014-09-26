@@ -1,18 +1,59 @@
+// Body
+//
+// No styleguide reference.
 body {
+  color: $color-text;
+  background-color: $color-background;
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
 }
 
 ::selection {
-  background-color: $color-primary-lighter;
+  background-color: rgba($color-primary-lighter, 0.5);
 }
 
+// Headings
+//
+// No styleguide reference.
 h1, h2, h3,
 .h1, .h2, .h3 {
   font-family: $font-family-display;
   line-height: 1.1;
 }
+
+h1,
+.h1 {
+  font-size: $font-size-h2;
+  @include media($mid) {
+    font-size: $font-size-h1;
+  }
+}
+
+h2,
+.h2 {
+  font-size: $font-size-h3;
+  @include media($mid) {
+    font-size: $font-size-h2;
+  }
+}
+
+h3,
+.h3 {
+font-size: $font-size-h4;
+  @include media($mid) {
+    font-size: $font-size-h3;
+  }
+}
+
+h4, h5, h6,
+.h4, .h5, .h6 {
+  font-size: modular-scale($base-font-size, -2, $base-ratio);
+  @include media($mid) {
+    font-size: $font-size-h4;
+  }
+}
+
 
 // Anchors
 //
@@ -78,7 +119,6 @@ a:visited,
 // </article>
 //
 // No styleguide reference.
-
 ul,
 ol {
   margin: 0;
@@ -114,12 +154,23 @@ article {
   }
 }
 
-// Images
+// Media
 //
 // No styleguide reference.
+figcaption {
+  font-style: italic;
+  &:before {
+    color: $color-grey;
+    font-style: normal;
+    font-feature-settings: "kern", "smcp", "c2sc", "liga", "pnum", "onum";
+  }
+}
 
-figure img {
-  min-width: 100%;
+// Paragraphs
+//
+// No styleguide reference
+p {
+  margin: 0 0 $base-line-height * 0.5em 0;
 }
 
 // Small
@@ -128,4 +179,70 @@ figure img {
 small {
   font-size: 1em;
   font-style: italic;
+}
+
+// Blockquote
+//
+// <blockquote>
+//   <p>However long you think something is going to take you, multiply that by five.</p>
+//   <p><strong>Author <a href="#">Source</a></strong>
+// </blockquote>
+//
+// No styleguide reference.
+blockquote {
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+  p:last-child {
+    strong:only-child {
+      font-style: normal;
+      font-weight: 600;
+      font-family: $font-family-sans;
+      display: block;
+      &:before {
+        content: "\2014";
+      }
+      a {
+        &:before {
+          content: "\2014";
+          font-size: 1em;
+          color: transparent;
+          user-select: none;
+        }
+        display: block;
+        font-weight: 400;
+      }
+    }
+    @include media($mid) {
+      @include span-columns(2);
+      @include shift(5 of 5);
+    }
+    @include media($wide) {
+      @include shift(1 of 7);
+      @include omega(1n);
+    }
+  }
+  @include media($mid) {
+    // Want this to be 3 of 5
+    @include span-columns(4 of 5);
+    @include shift(1 of 5);
+  }
+  @include media($wide) {
+    // Want this to be 5 of 7
+    @include span-columns(6 of 7);
+    @include shift(1 of 7);
+  }
+}
+
+pre {
+  font-size: 90%;
+  code,
+  kbd {
+    font-family: "Monaco", monospace, monospace;
+    background: $color-grey-dark;
+    display: block;
+    color: $color-grey-lighter;
+    padding: modular-scale($base-font-size, -2, $base-ratio);
+    border-radius: $base-border-radius;
+  }
 }

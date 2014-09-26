@@ -22,10 +22,9 @@ html(lang="en")
     .container
       .row
         include _includes/header
-    #main.main.container(role="main")
+      #main.main.container(role="main")
       //- If it’s an index, show it, otherwise wrap it in that directory’s _nest.jade
       != current.source === 'index' ? yield : partial((current.path[current.path.length - 2] || '') + "/_nest")
-    .container
       .row
         include _includes/footer
   block scripts

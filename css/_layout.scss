@@ -10,9 +10,7 @@
   @include outer-container();
   padding-left: $gutter;
   padding-right: $gutter;
-  &.container--full {
-    margin-left: auto;
-    margin-right: auto;
+  @include media($wide) {
     padding-left: 0;
     padding-right: 0;
   }
@@ -23,8 +21,8 @@
 // No styleguide reference.
 @if $visual-grid == true {
   body:before {
-    @include calc(width, '100% - #{ $gutter * 2 }');
-    @include calc(max-width, '#{ $max-width } - #{ $gutter * 2 }');
+    width: calc('100% - #{ $gutter * 2 }');
+    max-width: calc('#{ $max-width } - #{ $gutter * 2 }');
   }
 }
 
@@ -37,14 +35,9 @@
 //
 // .row--ltr - Explicitly set the column direction from left to right
 // .row--rtl - Explicitly set the column direction from right to left
-// .row--full - Full width row for breakout sections
 //
 // Styleguide 2.2.
 .row,
 .row--ltr {
   @include row();
-}
-
-.row--rtl {
-  @include row(RTL);
 }

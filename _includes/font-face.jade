@@ -1,9 +1,12 @@
-//- This should be way better
 script.
   WebFontConfig = {
     timeout: 1500,
-    typekit: {
-      id: '#{ service.typekit }'
-    }
+    // typekit: {
+    //   id: '#{ service.typekit }'
+    // },
+    custom: {
+        families: ['Cordale:n4,i4,n6'],
+        urls: ['/css/fonts.css']
+      }
   };
 script(async defer src="//ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js").
