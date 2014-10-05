@@ -4,4 +4,11 @@
 if published === false
   != partial("../404")
 else
-  != yield
+  article.article
+    h1.article-title!= typogr.typogrify(title)
+    .article-meta
+      time.article-time(datetime="")!= date
+      a.article-author(href="#")
+        img(src="http://placehold.it/300" alt="A photo of #{ author }")
+        != author
+    != typogr.typogrify(yield)

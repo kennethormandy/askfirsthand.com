@@ -1,0 +1,32 @@
+// Pullquotes
+//
+// Stylistic pullquotes (not blockquotes)
+// for articles, per [this example](http://miekd.com/articles/pull-quotes-with-html5-and-css/).
+//
+// Markup:
+// <div data-pullquote=""></div>
+//
+// No styleguide reference.
+
+@include media($mid) {
+  [data-pullquote]:before {
+    content: attr(data-pullquote);
+    display: block;
+    font-weight: 700;
+    @include span-columns(3 of 7);
+    font-size: $font-size-h4;
+    font-family: $font-family-display;
+    color: $color-primary-lighter;
+    margin-bottom: $gutter;
+    @include media($wide) {
+      margin-bottom: $outer;
+      font-size: $font-size-h3;
+      @include span-columns(4 of 7);
+      @include shift(-1);
+    }
+    @include media($huge) {
+      @include span-columns(4 of 7);
+      @include shift(-2);
+    }
+  }
+}

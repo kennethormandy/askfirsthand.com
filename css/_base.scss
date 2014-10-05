@@ -20,11 +20,15 @@ h1, h2, h3,
 .h1, .h2, .h3 {
   font-family: $font-family-display;
   line-height: 1.1;
+  margin-top: $base-line-height * 1rem;
+  margin-bottom: $base-line-height * 1.25rem;
 }
 
 h1,
 .h1 {
   font-size: $font-size-h2;
+  font-weight: 900;
+  text-transform: lowercase;
   @include media($mid) {
     font-size: $font-size-h1;
   }
@@ -33,6 +37,8 @@ h1,
 h2,
 .h2 {
   font-size: $font-size-h3;
+  font-weight: 700;
+  text-transform: lowercase;
   @include media($mid) {
     font-size: $font-size-h2;
   }
@@ -40,7 +46,9 @@ h2,
 
 h3,
 .h3 {
-font-size: $font-size-h4;
+  font-size: $font-size-h4;
+  text-transform: lowercase;
+  font-weight: 700;
   @include media($mid) {
     font-size: $font-size-h3;
   }
@@ -49,6 +57,8 @@ font-size: $font-size-h4;
 h4, h5, h6,
 .h4, .h5, .h6 {
   font-size: modular-scale($base-font-size, -2, $base-ratio);
+  margin-top: $base-line-height * 1rem;
+  margin-bottom: $base-line-height * 1.25rem;
   @include media($mid) {
     font-size: $font-size-h4;
   }
@@ -159,6 +169,7 @@ article {
 // No styleguide reference.
 figcaption {
   font-style: italic;
+  font-size: $font-size-small;
   &:before {
     color: $color-grey;
     font-style: normal;
@@ -190,6 +201,7 @@ small {
 //
 // No styleguide reference.
 blockquote {
+  font-family: $base-font-family;
   font-style: italic;
   margin: 0;
   padding: 0;
@@ -215,7 +227,6 @@ blockquote {
     }
     @include media($mid) {
       @include span-columns(2);
-      @include shift(5 of 5);
     }
     @include media($wide) {
       @include shift(1 of 7);
@@ -232,6 +243,13 @@ blockquote {
     @include span-columns(6 of 7);
     @include shift(1 of 7);
   }
+  ul,
+  ol {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-left: 0;
+  }
 }
 
 pre {
@@ -244,5 +262,21 @@ pre {
     color: $color-grey-lighter;
     padding: modular-scale($base-font-size, -2, $base-ratio);
     border-radius: $base-border-radius;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+hr {
+  width: 100% / 3;
+  margin-top: $base-line-height * 1.9em;
+  margin-bottom: $base-line-height * 2.1em;
+  height: 0px;
+  border: none;
+  border-bottom: 1px solid $color-grey;
+  @include media($wide) {
+    width: (100% / 7) * 3;
   }
 }

@@ -1,0 +1,50 @@
+// Article
+//
+// Markup:
+// <article class="article">
+//   <h1 class="article-title">Hello, world</h1>
+//   <p>I am by birth a Genevese; and my family is one of the most distinguished of that republic. My ancestors had been for many years counsellors and syndics; and my father had filled several public situations with honour and reputation.</p>
+//   <p>He was respected by all who knew him for his integrity and indefatigable attention to public business. He passed his younger days perpetually occupied by the affairs of his country.</p>
+// </article>
+//
+// No styleguide reference.
+.article {
+  p:first-of-type {
+    font-size: $font-size-h4;
+  }
+  .epigraph {
+    font-size: $base-font-size;
+  }
+}
+
+.article-title {
+}
+
+.article-meta {
+  font-style: italic;
+  // margin-top: $base-line-height * 1rem;
+  // margin-bottom: $base-line-height * 1.25rem;
+  @media (min-width: $max-width * 2.33) {
+    height: 0;
+  font-size: $font-size-small;
+    @include span-columns(2 of 7);
+    @include shift(7);
+  }
+  @media (min-width: $max-width * 3) {
+    @include span-columns(3 of 7);
+  }
+}
+
+.article-author {
+  display: block;
+  img {
+    display: block;
+    max-width: auto;
+    width: 50%;
+    border-radius: $base-border-radius;
+  }
+}
+
+.article-time {
+  display: block;
+}

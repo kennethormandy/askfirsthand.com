@@ -1,8 +1,8 @@
 // Base sizes
 // ==========
 
-$base-font-size: 1.375em;
-$base-line-height: 1.433;
+$base-font-size: 1.375rem;
+$base-line-height: 1.45;
 $base-border-radius: 0.125em;
 $base-ratio: $minor-third;
 
@@ -22,22 +22,22 @@ $grid-columns: 4;
 // Font Stacks
 // ===========
 
-$font-family-sans:      "Cordale", "Avenir Next", "AvenirNext-SemiBold", "Futura-Medium", Futura, "Futura Std", "Trebuchet MS", Helvetica, Arial, sans-serif;
+$font-family-sans:      "Mission Gothic", "Avenir Next", "AvenirNext-SemiBold", "Futura-Medium", Futura, "Futura Std", "Trebuchet MS", Helvetica, Arial, sans-serif;
 $font-family-serif:     "Cordale", Georgia, serif;
 $font-family-display:    $font-family-sans;
-$font-family-caption:    $font-family-sans;
-$font-family-monospace: "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+$font-family-caption:    $font-family-serif;
+$font-family-monospace: "Fira Mono", "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 $base-font-family:       $font-family-serif;
 
 // Font Sizes
 // ==========
 
 $font-size-large: modular-scale($base-font-size,  2, $base-ratio);
-$font-size-small: modular-scale($base-font-size, -4, $base-ratio);
-$font-size-h1:    modular-scale($base-font-size,  4, $base-ratio);
-$font-size-h2:    modular-scale($base-font-size,  2, $base-ratio);
-$font-size-h3:    modular-scale($base-font-size,  0, $base-ratio);
-$font-size-h4:    modular-scale($base-font-size,  0, $base-ratio);
+$font-size-small: modular-scale($base-font-size, -2, $base-ratio);
+$font-size-h1:    modular-scale($base-font-size,  6, $base-ratio);
+$font-size-h2:    modular-scale($base-font-size,  4, $base-ratio);
+$font-size-h3:    modular-scale($base-font-size,  2, $base-ratio);
+$font-size-h4:    modular-scale($base-font-size,  1, $base-ratio);
 $font-size-h5:    $font-size-h4;
 $font-size-h6:    $font-size-h4;
 
@@ -89,25 +89,30 @@ $color-grey-lighter: lighten($color-grey, 40%);
 $color-grey-dark: darken($color-grey, 20%);
 $color-grey-darker: darken($color-grey, 40%);
 
-$color-text: $color-grey-dark;
-$color-background: #FFF;
-
 $color-primary: $color-pink;
 $color-primary-light: lighten($color-primary, 10%);
 $color-primary-lighter: lighten($color-primary, 20%);
 $color-primary-dark: darken($color-primary, 10%);
 $color-primary-darker: darken($color-primary, 20%);
 
+$color-secondary: #F7E6D7;
+$color-secondary-light: lighten($color-secondary, 8%);
+$color-secondary-lighter: lighten($color-secondary, 16%);
+$color-secondary-dark: darken($color-secondary, 8%);
+$color-secondary-darker: desaturate(darken($color-secondary, 30%), 30%);
+
+$color-text: $color-grey-dark;
+$color-background: $color-secondary-light;
 
 // Figures
 // =======
 
 $fig-numbered:     true;
-$fig-border-color: $color-text;
+$fig-border-color: $color-grey-light;
 $fig-bg-color:     $color-background;
 $fig-container:    $max-width;
 $fig-gutter:       $gutter;
 $fig-line-height:  $base-line-height;
 $fig-col-width:    $column;
-$fig-outer:        $outer;
+$fig-outer:        0; // Since $outer is padding, don’t pass it in
 $fig-font-size-sm: $font-size-small;

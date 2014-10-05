@@ -11,25 +11,109 @@
   visibility: hidden;
 }
 
-article {
-  blockquote {
-    font-size: 1.25em;
-    border-left: 0.25em solid;
-    padding-left: 2em;
-    p:last-child {
-      strong:only-child {
-        font-style: italic;
-        font-weight: 400;
-        font-family: $font-family-serif;
-        color: $color-grey-dark;
-        display: block;
-        &:before {
-          content: "\2014";
-        }
-        a {
-          display: inline-block;
-        }
-      }
+// article {
+//   blockquote {
+//     font-size: 1.25em;
+//     border-left: 0.25em solid;
+//     padding-left: 2em;
+//     p:last-child {
+//       strong:only-child {
+//         font-style: italic;
+//         font-weight: 400;
+//         font-family: $font-family-serif;
+//         color: $color-grey-dark;
+//         display: block;
+//         &:before {
+//           content: "\2014";
+//         }
+//         a {
+//           display: inline-block;
+//         }
+//       }
+//     }
+//   }
+// }
+
+figure {
+  clear: left; // Blockquotes need to have their own clears instead
+}
+
+
+// Unnameds spread thing
+//
+// No styleguide reference.
+@include media($wide) {
+  .figure--spread {
+    margin: 0 0 $base-line-height * 1em 0; // Need to move figcaptions margin here
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    // Instead, might have to make this 100%
+    // cropped as a square by flexbox
+    // And then z-index layer figcaption
+    // overtop of it on the left or right
+    // (But at some point that’s basically overlay)
+    img {
+      max-width: 50%;
+      box-flex: 1;
+      flex: 1 1 50%;
+      // align-self: flex-start;
     }
+    figcaption {
+      max-width: 50%;
+      flex: 1 1 50%;
+      margin: 0;
+      color: $color-primary-dark;
+      font-family: $font-family-display;
+      padding: $base-line-height * 0.5em;
+      padding-left: $gutter;
+      font-style: normal;
+      font-weight: 600;
+      font-size: $font-size-large;
+      // background-color: $color-primary-lighter;
+      // @include span-columns(3.5 of 7);
+      &:before {
+        display: none;
+      }
+
+    }
+  }
+}
+//
+// @include media($mid) {
+//   .figure--spread {
+//     margin: 0 0 $base-line-height * 1em 0; // Need to move figcaptions margin here
+//     padding: 0;
+//     display: flex;
+//     height: 100%;
+//     align-items: center;
+//     justify-content: center;
+//     flex-direction: row;
+//     .spread-container { // Change to full list
+//       display: flex;
+//       width: 100vmin;
+//       height: 100vmin;
+//       overflow: hidden;
+//       position: relative;
+//       img {
+//         position: relative;
+//         display: block;
+//         width: 100%;
+//         height: auto;
+//         outline: 1px solid red;
+//       }
+//     }
+//     figcaption {
+//       display: none;
+//       // position: absolute;
+//     }
+//   }
+// }
+
+@include media($mid) {
+  q:first-child {
+    margin-left: -0.5em;
   }
 }

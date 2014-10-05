@@ -10,3 +10,10 @@
   display: block;
   visibility: visible;
 }
+
+.break {
+  display: inline-block;
+  @include media($mid) {
+    display: inline;
+  }
+}

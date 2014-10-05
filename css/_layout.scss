@@ -8,11 +8,11 @@
 // Styleguide 2.1.
 .container {
   @include outer-container();
-  padding-left: $gutter;
-  padding-right: $gutter;
+  padding-left: $outer;
+  padding-right: $outer;
   @include media($wide) {
-    padding-left: 0;
-    padding-right: 0;
+    // padding-left: 0;
+    // padding-right: 0;
   }
 }
 
@@ -23,6 +23,9 @@
   body:before {
     width: calc('100% - #{ $gutter * 2 }');
     max-width: calc('#{ $max-width } - #{ $gutter * 2 }');
+    border-left: $outer solid lighten($visual-grid-color, 20%);
+    border-right: $outer solid lighten($visual-grid-color, 20%);
+
   }
 }
 

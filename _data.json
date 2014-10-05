@@ -1,6 +1,12 @@
 {
+  "foreward": {
+    "title": "Foreward",
+    "date": "Oct 6, 2014",
+    "author": "Kenneth Ormandy",
+    "published": true
+  },
   "hello-world": {
-    "title": "Hello, world",
+    "title": "Hello, world or introducing the temp blog",
     "date": "Sept 1, 2014",
     "published": true
   }
