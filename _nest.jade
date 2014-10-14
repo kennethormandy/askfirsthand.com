@@ -8,9 +8,10 @@ else
     h1.article-title!= typogr.typogrify(title)
     .article-meta
       time.article-time(datetime="")!= date
-      a.article-author(href="#")
-        img(src="//avatars.io/twitter/#{ public.author._data[author].social.twitter }?size=large" alt="A photo of #{ author }")
-        p!= public.author._data[author].name
-      a(href="http://twitter.com/#{ public.author._data[author].social.twitter }") @#{ public.author._data[author].social.twitter }
+      if public.author._data[author]
+        a.article-author(href="#")
+          img(src="//avatars.io/twitter/#{ public.author._data[author].social.twitter }?size=large" alt="A photo of #{ author }")
+          p!= public.author._data[author].name
+        a(href="http://twitter.com/#{ public.author._data[author].social.twitter }") @#{ public.author._data[author].social.twitter }
       //- a(href="http://instagram.com/#{ public.author._data[author].social.instagram }") @#{ public.author._data[author].social.instagram }
     != typogr.typogrify(yield)
