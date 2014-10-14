@@ -5,8 +5,17 @@ script.
     //   id: '#{ service.typekit }'
     // },
     custom: {
-        families: ['Cordale:n4,i4,n6'],
-        urls: ['/css/fonts.css']
+      families: ['Cordale:n4,i4,n6'],
+      urls: ['/css/fonts.css']
+    },
+    active: function() {
+      if(typeof document.querySelectorAll !== 'undefined') {
+        var el = document.querySelectorAll('.article-title');
+        bigIdeasText(el, {
+          minfontsize: 16
+        });
       }
+    }
   };
-script(async defer src="//ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js").
+script(src="node_modules/big-ideas-text/dist/big-ideas-text.js")
+script(src="//ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js").

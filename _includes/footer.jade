@@ -1,6 +1,23 @@
-footer
-  ul
-    li: a(href="/")= name
-    li: a(href="/about") About
-    //- li.footer-item: a.footer-link(href="/sponsors") Sponsorship Opportunites
-  include ../colophon.md
+footer.footer
+  .footer-block
+    h4 First Hand
+    ul.article-list
+      i = 3
+      for article, slug in public._data
+        i = i - 1
+        unless article.published === false
+          li.article-item
+            a(href="#{ slug }")!= article.title
+            if i === 0
+              -break
+
+
+    ul
+      li: a(href="/")= name
+      li: a(href="/about") About
+  .footer-block
+    include ../colophon.md
+  .footer-block
+      <h4>Contributions</h4>
+
+      <small>Copyright © 2014 <a href="/about">First Hand’s respective authors</a>. Designed by <a href="http://kennethormandy.com">Kenneth Ormandy</a>. Code <a href="https://github.com/kennethormandy/askfirsthand.com">available</a> under the <a href="/LICENSE"><abbr>MIT</abbr> License</a>.</small>

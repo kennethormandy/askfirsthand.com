@@ -1,14 +1,19 @@
-h1 First Hand
+.figure--breakout
+  img(src="images/first-hand-promo.png")
+
+h1.hidden First Hand
 em A publication on process by writers, designers, and media and visual artists graduating from Emily Carr University.
 
-ul
+ul.article-list
   for article, slug in public._data
     unless article.published === false
-      li
+      li.article-item
         a(href="#{ slug }")
-          time(datetime="#{ new Date(article.date) }")
-            time= article.date
+          .article-meta
             //- Change this to frienly time first
-          h2 #{ article.title }
-          if service.disqus
-            a(href="#{ article.slug }#disqus_thread") Comments
+            time.article-date(datetime="#{ new Date(article.date) }")
+              != article.date
+            if service.disqus
+              a(href="#{ article.slug }#disqus_thread") Comments
+            span.article-author!= article.author
+          h2.article-title(style="background-image: -webkit-linear-gradient(transparent, transparent), url(images/#{ slug }.jpg)")!= article.title

@@ -22,7 +22,7 @@ $grid-columns: 4;
 // Font Stacks
 // ===========
 
-$font-family-sans:      "Mission Gothic", "Avenir Next", "AvenirNext-SemiBold", "Futura-Medium", Futura, "Futura Std", "Trebuchet MS", Helvetica, Arial, sans-serif;
+$font-family-sans:      "Mission Gothic", "Avenir Next Condensed", "AvenirNextCondensed-SemiBold", "Futura-Medium", Futura, "Futura Std", "Trebuchet MS", Helvetica, Arial, sans-serif;
 $font-family-serif:     "Cordale", Georgia, serif;
 $font-family-display:    $font-family-sans;
 $font-family-caption:    $font-family-serif;
@@ -70,7 +70,7 @@ $wide-width: 60em;
 $wide: new-breakpoint(min-width $wide-width $wide-col);
 
 $huge-col: $wide-col;
-$huge-width: 80em;
+$huge-width: 83em;
 $huge: new-breakpoint(min-width $huge-width $huge-col);
 
 $massive-col: $huge-col;

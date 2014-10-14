@@ -1,0 +1,14 @@
+:markdown
+
+  # About
+
+  This is some stuff about <cite>First Hand</cite>
+
+  ## Contributors
+
+ul
+  each author in public.author._data
+    li
+      a(href="http://twitter.com/#{ author.social.twitter}")
+        img(src="http://avatars.io/twitter/#{ author.social.twitter }?size=large")
+        strong= author.name

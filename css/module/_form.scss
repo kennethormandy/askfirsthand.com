@@ -10,6 +10,13 @@ form {
   }
 }
 
+fieldset {
+  border: 0;
+  padding: 0;
+  display: block;
+  margin: modular-scale($base-font-size, 0, $base-ratio) 0;
+}
+
 label {
   display: block;
   small {
@@ -41,33 +48,73 @@ label {
   }
 }
 
-textarea {
-// textarea,
-// #{$all-text-inputs} {
+textarea,
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+// Webkit & Gecko may change the display of these in the future
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="time"],
+input[type="week"] {
   appearance: none;
+  resize: none;
   width: 100%;
-  resize: vertical;
-  border: 1px solid $color-grey-dark;
   border-radius: $base-border-radius;
   font-family: $font-family-sans;
   line-height: $base-line-height;
-  padding: $gutter / 2 $gutter / 2;
+  padding: modular-scale($base-font-size, -2, $base-ratio);
   font-weight: $font-weight-normal;
   color: $color-grey-dark;
+  background-color: #FFF;
+  border: 1px solid #FFF;
 
   &:hover {
-    border-color: $color-grey-dark;
+    // border-color: $color-grey-light;
   }
 
   &:focus {
     color: $color-grey-darker;
-    border-color: $color-grey-dark;
+    // border-color: $color-grey-light;
+    outline: 0;
   }
 }
 
-input {
+textarea {
+  resize: vertical;
 }
 
-select {
-  width: auto;
+// Subscribe
+//
+// Newsletter subscription form.
+//
+// No styleguide reference.
+.form--subscribe {
+  margin-top: modular-scale($base-font-size, 6, $base-ratio);
+  padding: modular-scale($base-font-size, 0, $base-ratio);
+  border-radius: $base-border-radius;
+  box-shadow: 0 0 100px $color-secondary-dark;
+  & > h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+  }
+  .button {
+    width: 100%;
+    // margin-top: modular-scale($base-font-size, 0, $base-ratio);
+  }
+  @include media($mid) {
+    padding: modular-scale($base-font-size, 2, $base-ratio);
+    @include shift(1 of 5);
+    @include span-columns(3 of 5);
+  }
+  @include media($wide) {
+    @include shift(1 of 7);
+    @include span-columns(5 of 7);
+  }
 }

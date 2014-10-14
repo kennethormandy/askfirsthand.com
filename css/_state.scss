@@ -1,5 +1,8 @@
-//- Embrace FOUT for now I guess
-
+// Web Font Loading
+//
+// Embrace FOUT for now I guess
+//
+// No styleguide reference.
 .wf-loading {
   // display: none;
   // visibility: hidden;
@@ -11,9 +14,29 @@
   visibility: visible;
 }
 
+// Break
+//
+// For breaking widows width distretion.
+//
+// No styleguide refernece.
 .break {
   display: inline-block;
+  &.bigIdeasText-exempt {
+    display: inline-block;
+  }
   @include media($mid) {
     display: inline;
   }
+}
+
+// Hidden
+//
+// Hidden helper, currently
+// used on global `<h1>` and
+// one other thing
+//
+// No styleguide reference.
+.hidden {
+  display: none;
+  visibility: hidden;
 }

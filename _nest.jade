@@ -9,6 +9,8 @@ else
     .article-meta
       time.article-time(datetime="")!= date
       a.article-author(href="#")
-        img(src="http://placehold.it/300" alt="A photo of #{ author }")
-        != author
+        img(src="//avatars.io/twitter/#{ public.author._data[author].social.twitter }?size=large" alt="A photo of #{ author }")
+        p!= public.author._data[author].name
+      a(href="http://twitter.com/#{ public.author._data[author].social.twitter }") @#{ public.author._data[author].social.twitter }
+      //- a(href="http://instagram.com/#{ public.author._data[author].social.instagram }") @#{ public.author._data[author].social.instagram }
     != typogr.typogrify(yield)

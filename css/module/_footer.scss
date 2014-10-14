@@ -1,0 +1,30 @@
+// Footer
+//
+// No styleguide reference.
+.footer {
+  border-top: 1px solid $color-secondary-dark;
+  margin-top: modular-scale($base-font-size, 6, $base-ratio);
+  margin-bottom: modular-scale($base-font-size, 6, $base-ratio);
+  padding-top: modular-scale($base-font-size, 4, $base-ratio);
+  @include media($wide) {
+    font-size: $font-size-small;
+    @include span-columns(9 of 7);
+    @include shift(-1 of 7);
+  }
+  @include media($huge) {
+    @include span-columns(12 of 7);
+    @include shift(-2 of 7);
+  }
+}
+
+.footer-block {
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+  }
+  @include media($wide) {
+    @include span-columns(3 of 9);
+  }
+  @include media($huge) {
+    @include span-columns(3 of 12);
+  }
+}
