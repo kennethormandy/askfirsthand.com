@@ -5,7 +5,7 @@ We decided the best way to find an answer would be to ask previous and present c
 During the last week of classes, my friend and collaborator Geoff Campbell and I interviewed animators, ceramicists, photographers, writers, designers, and more, during their final week of study and preparation for [The Show](http://theshow.ecuad.ca/2014/home).
 
 <figure class="figure--aside figure--border">
-  ![](images/first-hand-promo-2.jpg)
+  ![](images/first-hand-promo.png)
   <figcaption>The South Building, where Kenneth Ormandy and Geoff Campbell filmed many of the interviews.</figcaption>
 </figure>
 
