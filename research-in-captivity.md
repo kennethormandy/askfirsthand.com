@@ -1,22 +1,22 @@
-For those of you who didn’t get the chance to watch Blackfish, I surely recommend you to watch it. In summary, the documentary is builds up to narrate the psychological effects of captivity towards killer whales through signs of aggression and also death. It’ll be safe to say that after watching that documentary, it creates a negative perception towards the aquarium.
+For those of you who didn’t get the chance to watch <cide>Blackfish</cite>, I surely recommend you to watch it. In summary, the documentary is builds up to narrate the psychological effects of captivity towards killer whales through signs of aggression and also death. It’ll be safe to say that after watching that documentary, it creates a negative perception towards the aquarium.
 
 <figure>
 <div class="embed-container"><iframe src="http://www.youtube.com/embed/fLOeH-Oq_1Y?modestbranding=1&showinfo=0&autohide=1&color=white&theme=light" frameborder="0" allowfullscreen></iframe></div>
-<figcaption>The <cite>Blackfish</cite> trailer.</figcaption>
+<figcaption>The <cite>Blackfish</cite> documentary trailer</figcaption>
 </figure>
 
 Vancouver Aquarium, our local, non-profit aquarium was deeply affected by this documentary. Many activists, including Mayor Gregor himself, demands the Vancouver Aquarium to release the cetaceans from the hands of Vancouver Aquarium. However, due to the recent expansion of the building, the aquarium insisted on keeping the cetaceans because they believe that the cetaceans were the main reason the aquarium generated revenue. Nevertheless, Vancouver Aquarium is known for their research in conservation efforts and the cetaceans which were in the aquarium were ones who needed rehabilitation.
 
 <figure class="figure--aside">
 ![](images/research-in-captivity.jpg)
-<figcaption>A still from the documentary <cite>Blackfish</cite></figcaption>
+<figcaption>A killer whale looking through the aquarium window found in SeaWorld promotional material</figcaption>
 </figure>
 
-I would like to ask you the question: despite the tragedy that happened in the Blackfish documentary, would you allow Vancouver Aquarium to keep marine mammals in their aquarium for research purposes? How might design bridge the gap of keeping animals for research against the use of animals for entertainment and profit purposes?
+I would like to ask you the question: despite the tragedy that happened in the <cide>Blackfish</cite> documentary, would you allow Vancouver Aquarium to keep marine mammals in their aquarium for research purposes? How might design bridge the gap of keeping animals for research against the use of animals for entertainment and profit purposes?
 
 <figure class="figure--aside">
 ![](images/research-in-captivity-2.jpg)
-<figcaption>Promotional images from the Vancouver Aquarium</figcaption>
+<figcaption>Aquariums connecting its viewers with the animals</figcaption>
 </figure>
 
 Research says that  local zoos and aquariums have influenced citizens to take conservation acts towards animals— especially those who are threatened for extinction. It also states, <q>visitors have felt more connection towards the animals after their visit to the zoo/aquarium.</q> How might we foster this connection without the presence of aquariums? After looking into the ethics of wildlife care, I find that it is acceptable to <q>use wildlife for research, management, teaching and testing [...] if it contributes to benefit humans, animals or ecosystem.</q>
