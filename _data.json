@@ -1,18 +1,42 @@
 {
+  "a-trip-planner-that-wont-tell-you-where-you-are-going": {
+    "title": "A trip planner that <span>won’t tell you</span> where you are going",
+    "date": "Nov 19, 2014",
+    "author": "Serene Giles",
+    "published": true
+  },
+  "capturing-surprise-and-memory": {
+    "title": "<span>Capturing surprise &amp;</span> <span>memory</span>",
+    "date": "Nov 12, 2014",
+    "author": "Matt Chan",
+    "published": true
+  },
+  "lift": {
+    "title": "<span>Elevating the spirits</span> of those with primary lymphedema",
+    "date": "Nov 4, 2014",
+    "author": "Victoria Lee",
+    "published": true
+  },
+  "branding-wearables": {
+    "title": "Branding <span>wearables</span>",
+    "date": "Oct 26, 2014",
+    "author": "Sean Ostashek",
+    "published": true
+  },
   "research-in-captivity": {
-    "title": "research in <span>captivity</span>",
+    "title": "Research in <span>captivity</span>",
     "date": "Oct 21, 2014",
     "author": "Victoria Simansjah",
     "published": true
   },
   "how-i-freaked-out-and-chose-my-grad-project": {
-    "title": "how I <strong>freaked out</strong> and chose my grad project",
+    "title": "How I <span>freaked out</span> and chose my grad project",
     "date": "Oct 14, 2014",
     "author": "Claire Carsley",
     "published": true
   },
   "foreward": {
-    "title": "foreward",
+    "title": "Foreward",
     "date": "Oct 13, 2014",
     "author": "Kenneth Ormandy",
     "published": true

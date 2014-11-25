@@ -12,13 +12,26 @@
   p:first-of-type {
     font-size: $font-size-h4;
   }
-  .epigraph {
-    font-size: $base-font-size;
+  .epigraph,
+  p.epigraph {
+    font-size: $font-size-small;
+    font-style: italic;
+    color: $color-grey;
+    @include media($mid) {
+      @include span-columns(3 of 5);
+      @include shift(1 of 5);
+    }
+    @include media($wide) {
+      @include span-columns(5 of 7);
+      @include shift(1 of 7);
+    }
   }
 }
 
 .article-title {
   line-height: 0.9;
+  text-transform: uppercase;
+
   strong {
     font-weight: inherit;
     text-transform: uppercase;
@@ -26,7 +39,7 @@
 }
 
 .article-list {
-  border-top: 1px solid $color-secondary-dark;
+  // border-top: 1px solid $color-secondary-dark;
   .article-title {
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba($color-grey, 0.5);
@@ -64,7 +77,7 @@
 .article-item {
   position: relative;
   display: block;
-  border-bottom: 1px solid $color-secondary-dark;
+  // border-bottom: 1px solid $color-secondary-dark;
 }
 
 .article-meta {

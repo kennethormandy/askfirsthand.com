@@ -1,16 +1,17 @@
-//- TODO Don’t hard-code this
-//- a.blog-author(href="http://twitter.com/kennethormandy") Kenneth Ormandy
-
 if published === false
   != partial("../404")
 else
   article.article
-    h1.article-title!= typogr.typogrify(title)
+    if public.author._data[author]
+      .row
+        em.epigraph!= public.author._data[author].project.desc
+    .row
+      h1.article-title!= typogr.typogrify(title)
     .article-meta
       time.article-time(datetime="")!= date
       if public.author._data[author]
         a.article-author(href="#")
-          img(src="//avatars.io/twitter/#{ public.author._data[author].social.twitter }?size=large" alt="A photo of #{ author }")
+          img(async defer src="//avatars.io/twitter/#{ public.author._data[author].social.twitter }?size=large" alt="A photo of #{ author }")
           p!= public.author._data[author].name
         a(href="http://twitter.com/#{ public.author._data[author].social.twitter }") @#{ public.author._data[author].social.twitter }
       //- a(href="http://instagram.com/#{ public.author._data[author].social.instagram }") @#{ public.author._data[author].social.instagram }

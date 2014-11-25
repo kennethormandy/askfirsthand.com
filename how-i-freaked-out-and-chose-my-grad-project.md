@@ -1,5 +1,3 @@
-My grad project is on youth electoral participation. With my partner, Cheryl Li, we aim to create an innovative design outcome that increases voter participation in young adults, ages 18-24.
-
 Deciding on a topic for my grad project was possibly one of the most anxiety provoking (but exciting) experiences I’ve had so far at Emily Carr.
 
 At the end of last spring semester, we were tasked with coming up with three ideas for our grad project over the summer. And then summer happened; I got sidetracked by sunshine, craft beers, a summer job, and obviously didn’t start really brainstorming until four days before classes started again.

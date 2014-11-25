@@ -2,7 +2,7 @@
 // ==========
 
 $base-font-size: 1.375rem;
-$base-line-height: 1.45;
+$base-line-height: 1.55;
 $base-border-radius: 0.125em;
 $base-ratio: $minor-third;
 
@@ -35,9 +35,9 @@ $base-font-family:       $font-family-serif;
 $font-size-large: modular-scale($base-font-size,  2, $base-ratio);
 $font-size-small: modular-scale($base-font-size, -2, $base-ratio);
 $font-size-h1:    modular-scale($base-font-size,  6, $base-ratio);
-$font-size-h2:    modular-scale($base-font-size,  4, $base-ratio);
+$font-size-h2:    modular-scale($base-font-size,  3, $base-ratio);
 $font-size-h3:    modular-scale($base-font-size,  2, $base-ratio);
-$font-size-h4:    modular-scale($base-font-size,  1, $base-ratio);
+$font-size-h4:    modular-scale($base-font-size,  0, $base-ratio);
 $font-size-h5:    $font-size-h4;
 $font-size-h6:    $font-size-h4;
 
@@ -86,7 +86,7 @@ $color-pink: #DE7B8F;
 $color-grey: #777;
 $color-grey-light: lighten($color-grey, 20%);
 $color-grey-lighter: lighten($color-grey, 40%);
-$color-grey-dark: darken($color-grey, 20%);
+$color-grey-dark: darken($color-grey, 15%);
 $color-grey-darker: darken($color-grey, 40%);
 
 $color-primary: $color-pink;

@@ -17,3 +17,7 @@ ul.article-list
               a(href="#{ article.slug }#disqus_thread") Comments
             span.article-author!= article.author
           h2.article-title(style="background-image: -webkit-linear-gradient(transparent, transparent), url(images/#{ slug }.jpg)")!= article.title
+          //-
+            if public.author._data[article.author].project
+              project = public.author._data[article.author].project
+              em <strong>#{ project.title }</strong> #{ project.desc }

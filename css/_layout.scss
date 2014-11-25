@@ -44,3 +44,9 @@
 .row--ltr {
   @include row();
 }
+
+@include direction(RTL) {
+  .row--rtl {
+    @include row();
+  }
+}

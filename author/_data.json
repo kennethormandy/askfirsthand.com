@@ -1,7 +1,48 @@
 {
+  "Serene Giles": {
+    "name": "Serene Giles",
+    "major": "Communication Design",
+    "url": "",
+    "project": {
+      "title": "roam",
+      "desc": ""
+    },
+    "social": {
+      "twitter": ""
+    }
+  },
+  "Matt Chan": {
+    "name": "Matt Chan",
+    "major": "Interaction Design",
+    "url": "http://mattc.ca",
+    "project": {
+      "title": "Capturing Surprise and Memory",
+      "desc": "My project aims to use mobile photography as a way to promote spontaneity and surprise in the present moment, as well as to celebrate memories—even preserving our more mundane ones."
+    },
+    "social": {
+      "twitter": "mattbchan"
+    }
+  },
+  "Victoria Lee": {
+    "name": "Victoria Lee",
+    "major": "Communication Design",
+    "url": "http://vleeway.squarespace.com",
+    "project": {
+      "title": "Lift: Elevating the Spirits of those with Primary Lymphedema",
+      "desc": "Lift is a project aimed to discover how we might use communication design to improve the perceptions of people between the ages of 21-30, diagnosed with stage 2 congenital or praecox lymphedema regarding their body image and appearance."
+    },
+    "social": {
+      "twitter": "vleeway",
+      "linkedin": "vleeway"
+    }
+  },
   "Claire Carsley": {
     "name": "Claire Carsley",
     "major": "Communication Design",
+    "project": {
+      "title": "",
+      "desc": "My grad project is on youth electoral participation. With my partner, Cheryl Li, we aim to create an innovative design outcome that increases voter participation in young adults, ages 18-24."
+    },
     "social": {
       "twitter": "claire_carsley",
       "instagram": "claire_carsley"
@@ -14,14 +55,34 @@
     "social": {
       "twitter": "kennethormandy",
       "instagram": "kennethormandy"
+    },
+    "project": {
+      "title": "",
+      "desc": ""
     }
   },
   "Victoria Simansjah": {
     "name": "Victoria Simansjah",
     "major": "Communication Design",
     "url": "http://victoriasimansjah.com",
+    "project": {
+      "title": "Research in Captivity",
+      "desc": "Research in Captivity addresses the dichotomy between having animals kept for captivity and animals used for research on conservation efforts. In response to the hit documentary, Blackfish, this project aims to create a safe environment for people to make conscious decisions regarding the existence of cetaceans in our local aquarium."
+    },
     "social": {
       "twitter": "vixerminator"
+    }
+  },
+  "Sean Ostashek": {
+    "name": "Sean Ostashek",
+    "major": "Communication Design",
+    "url": "http://seanostashek.com",
+    "project": {
+      "title": "Branding Wearables",
+      "desc": "Responding to a rise in consumer interest for wearable technologies, my undergraduate project is a hypothetical narrative or scenario that aims to speculate and demonstrate what the future of wearables may entail, in order to educate early adopters on its underlying societal issues and encourage innovation and sustainability in the wearables product space."
+    },
+    "social": {
+      "twitter": "SeanOstashek"
     }
   }
 }
