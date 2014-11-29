@@ -36,7 +36,7 @@ $font-size-large: modular-scale($base-font-size,  2, $base-ratio);
 $font-size-small: modular-scale($base-font-size, -2, $base-ratio);
 $font-size-h1:    modular-scale($base-font-size,  6, $base-ratio);
 $font-size-h2:    modular-scale($base-font-size,  3, $base-ratio);
-$font-size-h3:    modular-scale($base-font-size,  2, $base-ratio);
+$font-size-h3:    modular-scale($base-font-size,  1, $base-ratio);
 $font-size-h4:    modular-scale($base-font-size,  0, $base-ratio);
 $font-size-h5:    $font-size-h4;
 $font-size-h6:    $font-size-h4;
