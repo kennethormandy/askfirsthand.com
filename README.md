@@ -21,13 +21,13 @@ npm install
 harp server
 ```
 
-## Deploying to the [Harp Platform](http://harp.io)
+## Deploying
 
-First Hand uses a somewhat unconventional method of deploying to the Harp Platform. You’ll need to have access to the project on the Harp Platform and the Dropbox shared with you to deploy. Follow the [Running locally](#running-locally) instructions, and then:
+You’ll have to be a collaborator to deploy this project. [Email Kenneth](kenneth@chloi.io) to get access, and thanks for your interest!
+
+First, follow the [Running locally](#running-locally) instructions. Then run the following command:
 
 ```bash
-# Compile to your Dropbox
+# Compile and deploy to askFirstHand.com
 npm run deploy
 ```
-
-Now, just press “Publish” on the [Harp Platform](http://harp.io).
