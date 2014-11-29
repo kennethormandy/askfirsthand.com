@@ -11,19 +11,15 @@ footer.footer
             a(href="/#{ slug }")!= article.title
             if i === 0
               - break
+    ul.article-list
+      li: a(href="/") Home
+      li: a(href="/about") About #{ name }
 
-
-    ul
-      li: a(href="/")= name
-      li: a(href="/about") About
   .footer-block
     include ../colophon.md
-  .footer-block
-      h4 Contributions
-      small Copyright © 2014 <a href="/about">First Hand’s respective authors</a>. Designed by <a href="http://kennethormandy.com">Kenneth Ormandy</a>. Code <a href="https://github.com/kennethormandy/askfirsthand.com">available</a> under the <a href="/LICENSE"><abbr>MIT</abbr> License</a>.</small>
-  .footer-block
-      h4 Featured
-      blockquote
-        p Something important
-        p: strong Someone important
-          a(href="#") Somewhere important
+    h4 Contributors
+    small Copyright © 2014 <a href="/about">First Hand’s authors, respectively</a>. Designed by <a href="http://kennethormandy.com">Kenneth Ormandy</a>. Code <a href="https://github.com/kennethormandy/askfirsthand.com">available</a> under the <a href="/LICENSE"><abbr>MIT</abbr> License</a>.</small>
+  .footer-block.footer-block--wide
+    h4 Subscribe to <cite>First Hand</cite>
+    include subscribe
+        

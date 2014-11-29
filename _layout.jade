@@ -26,8 +26,6 @@ html(lang="en")
       //- If it’s an index, show it, otherwise wrap it in that directory’s _nest.jade
       != current.source === 'index' ? typogr.typogrify(yield) : partial((current.path[current.path.length - 2] || '') + "/_nest")
       .row
-        include _includes/subscribe
-      .row
         include _includes/footer
   block scripts
     script(src="/js/vendor/trmix.js")

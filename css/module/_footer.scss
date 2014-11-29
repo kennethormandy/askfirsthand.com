@@ -28,3 +28,18 @@
     @include span-columns(3 of 12);
   }
 }
+
+.footer-block--wide {
+  @include media($huge) {
+    @include span-columns(4 of 12);
+    @include shift(1 of 12);
+    .form--subscribe {
+      margin: 0;
+      width: 100%;
+      .form-title {
+        display: none;
+        visibility: hidden;
+      }
+    }
+  }
+}
