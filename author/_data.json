@@ -1,4 +1,16 @@
 {
+  "Cheryl Li": {
+    "name": "Cheryl Li",
+    "major": "Communication Design",
+    "url": "",
+    "project": {
+      "title": "Everyday Democracy",
+      "desc": "Everyday Democracy is the grad project of Cheryl Li and Claire Carsley that explores the possibilities of using design as a tool to increase voter turnout and civic engagement among youth ages 18-24 in Canada."
+    },
+    "social": {
+      "twitter": "cherylhjli"
+    }
+  },
   "Serene Giles": {
     "name": "Serene Giles",
     "major": "Communication Design",

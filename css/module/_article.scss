@@ -9,8 +9,8 @@
 //
 // No styleguide reference.
 .article {
-  p:first-of-type {
-    font-size: $font-size-h4;
+  > p:first-of-type {
+    font-size: $font-size-h3;
   }
   .epigraph,
   p.epigraph {
@@ -25,6 +25,11 @@
       @include span-columns(5 of 7);
       @include shift(1 of 7);
     }
+  }
+  footer:last-child {
+    @extend .footer;
+    font-style: italic;
+    // font-size: $font-size-small;
   }
 }
 
