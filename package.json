@@ -18,14 +18,14 @@
     "postinstall": "rm -rf ./node_modules/chasers/test && rm -rf ./node_modules/straight-up/test",
     "start": "harp server",
     "compile": "harp compile && rm -rf ./www/node_modules",
-    "deploy": "npm run compile && surge ./www askfirsthand.com"
+    "deploy": "npm run compile && surge ./www"
   },
   "devDependencies": {
     "chasers": "git://github.com/kennethormandy/chasers#v0.3.0",
     "figment": "git://github.com/kennethormandy/figment#v0.6.1",
     "straight-up": "git://github.com/kennethormandy/straight-up#v0.1.3",
     "normalize-opentype": "git://github.com/kennethormandy/normalize-opentype.css#v0.2.1",
-    "surge": "~0.4.1",
+    "surge": "~0.5.0",
     "typogr": "~0.6.4"
   }
 }
