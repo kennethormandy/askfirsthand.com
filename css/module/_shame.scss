@@ -108,3 +108,169 @@ figure {
     margin-left: -0.5em;
   }
 }
+
+.header {
+  margin-bottom: 3em;
+  p {
+    margin-top: 1em;
+  }
+}
+
+// Nav
+// ===
+
+// Nav
+// ===============
+
+.nav {
+  position: relative;
+  transition: none;
+  font-family: $font-family-sans;
+  text-align: center;
+  @include media($mid) {
+    font-size: 0.8em;
+  }
+}
+
+.nav--main {
+  .nav-item {
+    display: none;
+    visibility: hidden;
+    @include media($mid) {
+      display: inline-block;
+      visibility: visible;
+      text-align: center;
+    }
+  }
+}
+
+.nav--sidebar {
+  text-align: left;
+  margin-bottom: $base-line-height * 3em;
+  .nav-list {
+    border-radius: $base-border-radius;
+    float: none;
+    margin-left: 0;
+    padding-left: 0;
+    border: 1px solid darken($color-grey-lighter, 10%);
+    background: $color-grey-lighter;
+  }
+  .nav-item {
+    text-align: left;
+    display: block;
+    width: 100%;
+  }
+  .nav-link {
+    padding: 0;
+  }
+  @include media($mid) {
+    float: none;
+  }
+  @include media($wide) {
+    .nav-list {
+      border: 0;
+      background: transparent;
+    }
+  }
+}
+
+.nav--panel {
+  .nav-item {
+    border-bottom: 1px solid $fig-border-color;
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+  .nav-link {
+    padding: 1em;
+  }
+}
+
+.nav-list {
+  display: block;
+  list-style: none;
+  @include media($mid) {
+    padding: 0;
+    margin: 0;
+    float: right;
+    text-align: right;
+    display: block;
+    position: relative;
+  }
+}
+
+.nav-item {
+  display: block;
+  @include media($mid) {
+    display: inline-block;
+    visibility: visible;
+    text-align: center;
+  }
+}
+
+.nav-item--skip {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  &:focus {
+    width: auto;
+    height: auto;
+    overflow: visible;
+  }
+}
+
+.nav-link,
+.nav-link:visited {
+  display: block;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  .knockout & {
+    color: $color-background;
+  }
+  &:hover,
+  &:active {
+    color: $color-primary;
+  }
+}
+
+.nav-toggle {
+  // @extend .is-visible
+  display: block;
+  visibility: visible;
+  text-align: right;
+  @include media($mid) {
+    // @extend .is-hidden;
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.nav-link {
+  @include media($mid) {
+    padding: 1em 0.5em 0.5em 0.5em;
+  }
+  @include media($wide) {
+    padding: 1em 0.5em;
+  }
+}
+
+.nav--footer {
+  .nav-list {
+    margin-top: 3em;
+    text-align: center;
+  }
+  &:target {
+    transition: background 0.25s ease, color 0.25s ease;
+    background: $color-grey;
+    border-radius: $base-border-radius;
+    a, a:visited {
+      color: $color-background;
+    }
+    @include media($mid) {
+      background: inherit;
+      a, a:visited {
+        color: $color-primary;
+      }
+    }
+  }
+}
